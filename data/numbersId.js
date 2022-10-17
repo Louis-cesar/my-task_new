@@ -76,6 +76,31 @@ export const numbersId = [
       "id": 15,
       "numbers": "/Fifteen",
       "title": "Fifteen"
-    }
+    },
+    {
+      "id": 16,
+      "numbers": "/Sixteen",
+      "title": "Sixteen"
+    },
+    {
+        "id": 17,
+        "numbers": "/Seventeen",
+        "title": "Seventeen"
+    },
+    {
+        "id": 18,
+        "numbers": "/Eighteen",
+        "title": "Eighteen"
+    },
+    {
+        "id": 19,
+        "numbers": "/Nineteen",
+        "title": "Nineteen"
+    },
+    {
+        "id": 20,
+        "numbers": "/Twenty",
+        "title": "Twenty"
+      }
   ]
   

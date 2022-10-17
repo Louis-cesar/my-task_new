@@ -1,5 +1,4 @@
 import ListLayout from '../../../comps/ListLayout'
-// import styles from "../../styles/number.module.css";
 import NumberListData from "../../../data/numbers-id.json";
 import { useRouter } from "next/router";
 
@@ -8,7 +7,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       NumberList: NumberListData.find((NumberList) => {
-        return NumberList.id.toString() === params.id; //dynamic id
+        return NumberList.id.toString() === params.id;
       }),
     }, // will be passed to the page component as props
   };
@@ -32,6 +31,11 @@ export async function getStaticPaths() {
       { params: { id: "13" } },
       { params: { id: "14" } },
       { params: { id: "15" } },
+      { params: { id: "16" } },
+      { params: { id: "17" } },
+      { params: { id: "18" } },
+      { params: { id: "19" } },
+      { params: { id: "20" } },
     ],
     fallback: false,
   };
@@ -42,9 +46,6 @@ const Dynamic = (props) => {
   const id = router.query.id;
   return (
     <ListLayout>{props.NumberList.title}</ListLayout>
-    // <div className={styles.box2Container}>
-    //   <p className={styles.numbertitle}>{props.NumberList.title}</p>
-    // </div>
   );
 };
 

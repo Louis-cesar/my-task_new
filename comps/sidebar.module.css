@@ -21,7 +21,6 @@
 .list:hover,
 .list:focus {
   background-color: #111111;
-  border-radius: 15px;
-  transition: 0.5s;
+  border-radius: 8px;
   box-shadow: 0 0 0 5px #111111;
 }
